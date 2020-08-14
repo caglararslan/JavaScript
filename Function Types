@@ -1,0 +1,24 @@
+//Normal Basit Fonksiyon
+function merhaba(name="Bilgi Yok",age="Bilgi Yok"){
+    console.log(`İsim:${name} Yaş:${age}`)
+}
+merhaba("Çağlar",22);
+merhaba();
+
+//Matematikel Fonksiyon
+function cube(x){
+    return x*x*x;
+}
+let a=cube(12);
+console.log(a);
+
+//Function Expression
+const merhaba2=function(name){
+    console.log("Merhaba "+name );
+}
+merhaba2("Çağlar");
+
+//Immediately Invoked Function Expression(IIFE)
+(function(name){
+    console.log("Merhaba "+name);
+})("Çağlar");
