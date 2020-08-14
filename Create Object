@@ -1,0 +1,15 @@
+let value;
+const programmer={
+    name : "Çağlar Arslan",
+    age : 22,
+    email : "caglararslan98@hotmail.com",
+    langs : ["Python","Javascript"],
+
+    address : {
+        city : "İstanbul",
+        street : "Beyoğlu",
+    },
+}
+value=programmer;
+value=programmer.address;
+console.log(value);
