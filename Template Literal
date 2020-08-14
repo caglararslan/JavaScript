@@ -1,0 +1,9 @@
+//Bize daha kolay bir string kullanımı sağlıyor
+
+const name="Çağlar";
+const department="Yazılım";
+const salary=4500
+
+//const a="isim: "+name+" Departman: "+department+" Maaş: "+salary;
+const a=`İsim:${name}\nDepartman:${department}\nMaaş:${salary}`
+console.log(a);
