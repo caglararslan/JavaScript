@@ -1,0 +1,10 @@
+/*let value;
+const todoList=document.querySelector(".list-group")
+const todo=document.querySelector(".list-group-item:nth-child(2)")//Burada list-group-item classındaki ikinci çocuğuna erişiyoruz.
+const cardrow=document.querySelector(".card.row");
+
+value=cardrow.children[2].children[1].textContent="Burası Değişti";
+value=todoList.children[0].textContent="asd";
+
+console.log(value);
+*/
