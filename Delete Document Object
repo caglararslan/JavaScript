@@ -1,0 +1,8 @@
+const todoList=document.querySelector("ul.list-group");//Öncelikle Listenin tümüne ulaşıyoruz.
+const todo=document.querySelectorAll("li.list-group-item");//Listenin tümüne ulaştığımız için listenin çocuklarına ulaşabiliriz.
+
+console.log(todoList);
+console.log(todo);
+
+todo[0].remove();
+
