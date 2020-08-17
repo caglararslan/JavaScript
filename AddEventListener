@@ -1,0 +1,5 @@
+const todo=document.querySelector(".dfaf");//Özellik eklemek istediğimiz kısmı seçiyoruz.
+todo.addEventListener("submit",run);//"submit" kısmında hangi event te çalışmasını,yanındaki run kısmında ise submit edildiğinde hangi fonksiyonun çlıştırılacağını belirtiyoruz.
+function run(e){
+    console.log("Başardınız!");
+}
