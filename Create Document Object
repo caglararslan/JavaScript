@@ -1,0 +1,14 @@
+const newElement=document.createElement("a"); //Burada Yeni elementi yaratıyoruz.Parantez içindeki "a" ifadesi ne yaratmak istediğimizi ifade eder.
+const cardbody=document.getElementsByClassName("card-body")[1]; //Yaratılan elementi nereye koyacağımızı seçiyoruz.
+
+newElement.id="clear-todos"; //Bu satırlarda Yaratmış olduğumuz yeni elementimizin özelliklerinin atamasını yapıyoruz.
+newElement.className="btn btn-danger";
+newElement.href="https://www.google.com.tr";
+newElement.target="_blank";
+newElement.appendChild(document.createTextNode("Google'a Git!"));
+
+cardbody.appendChild(newElement);
+
+console.log(newElement);
+
+
