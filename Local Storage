@@ -1,0 +1,22 @@
+//Set Item
+
+localStorage.setItem("hareket","burpee");
+localStorage.setItem("tekrar",50);
+
+//Get Item
+
+console.log(localStorage.getItem("tekrar"));
+
+//Sorgulama
+
+if(localStorage.getItem("hareket")===null){
+    console.log("Sorgulanan değer bulunamadı.");
+}
+else{
+    console.log("Sorgulanan değer bulundu!");
+}
+
+//Local Host - Array Yazma
+
+const todos=["todo1","todo2","todo3"];
+localStorage.setItem("todos",JSON.stringify(todos)); //Kullandığımız JSON kodu sayesinde array tipinde kaydedebildik.Yoksa string türünde kaydederdik.
