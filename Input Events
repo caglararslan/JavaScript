@@ -1,0 +1,15 @@
+const filter=document.getElementById("filter");
+
+//focus Eventi input alanına tıklandığında çalışır
+filter.addEventListener("focus",run);
+
+function run(e){
+    console.log(e.type);
+}
+
+//Paste Eventi İnput alanına yapıştırma işlemi yapıldığında çalışır
+
+filter.addEventListener("paste",run);
+function run(e){
+    console.log(e.type);
+}
