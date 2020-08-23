@@ -1,0 +1,6 @@
+//Spread Operator
+const arr=["Java","Python","C++"];
+console.log(...arr);
+
+const arr2=["Kotlin","JavaScript",...arr];
+console.log(arr2);
