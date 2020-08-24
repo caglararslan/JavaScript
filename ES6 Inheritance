@@ -1,0 +1,15 @@
+class Person{
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+}
+class Employee extends Person{
+    constructor(name,age,salary){
+        super(name,age);
+        this.salary = salary;
+        
+    }
+}
+const emp=new Employee("Çağlar",22,5000);
+console.log(emp);
