@@ -1,0 +1,13 @@
+const obj1={
+    number1:10,
+    number2:20,
+}
+const obj2={
+    number1:50,
+    number2:30,
+}
+function topla(num){
+    console.log(this.number1+this.number2+num);
+}
+topla.call(obj1,100);
+topla.call(obj2,100);
