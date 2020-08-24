@@ -1,0 +1,17 @@
+function Person(){
+    
+}
+Person.prototype.test1=function(){
+    console.log("test1");
+}
+Person.prototype.test2=function(){
+    console.log("test2");
+}
+function Employee(name,age){
+    this.name=name;
+    this.age=age;
+}
+Employee.prototype=Object.create(Person.prototype);
+const emp1=new Employee("Çağlar",22);
+console.log(emp1.test1);
+console.log(emp1);
