@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Çağlar Arslan",
+        "department": "Bilişim",
+        "salary":4000
+    },
+    {
+        "name": "Mustafa Murat",
+        "department": "Bilişim",
+        "salary":4000
+    },
+    {
+        "name":"Bunyamin Goksu",
+        "department":"Pazarlama",
+        "salary":4500
+    }
+]
