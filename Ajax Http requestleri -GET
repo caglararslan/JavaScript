@@ -1,0 +1,35 @@
+class Request{
+
+    constructor(){
+        this.xhr=new XMLHttpRequest();
+    }
+    // Get Request
+
+    get(url,callback){
+        this.xhr.open("GET", url);
+        
+
+        this.xhr.onload=function(){
+            if(this.xhr.status==200){
+                callback(null,this.xhr.responseText);
+            }
+            else{
+                    callback("Herhangi Bir Hata Oluştu!",null);
+            }
+        }.bind(this);
+        this.xhr.send();
+    }
+}
+const request = new Request();
+ request.get("https://jsonplaceholder.typicode.com/albums",function(err,response){
+    if(err===null){ 
+        //Başarılı Durum
+        console.log(response);
+    }
+    else{
+        //Hata Durumu
+        console.log(err);
+    }
+ });
+
+ 
