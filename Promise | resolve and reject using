@@ -1,0 +1,30 @@
+function getData(data) {
+    return new Promise(function (resolve, reject) {
+        setTimeout(function () {
+
+            if(typeof data === "string"){
+                //Olumlu Sonuç
+                resolve(data);
+            }
+            else{
+                //Hatalı Sonuç
+                reject("Lütfen String Bir Değer Girin");
+            }
+            
+        },5000);
+    });
+}
+
+getData("Merhaba").then(function (response){
+    console.log("Gelen Değer: "+response);
+}).catch(function (err){
+    console.log(err);
+});
+
+
+
+
+
+
+
+
