@@ -1,0 +1,26 @@
+class Request{
+    get(url){
+        fetch(url)
+        .then(response =>response.text())
+        .then(data =>console.log(data))
+        .catch(err =>console.log(err))
+    }
+    post(url,data){
+        fetch(url,{
+            method: 'PUT',
+            body: JSON.stringify(data),
+            headers: {
+              'Content-type': 'application/json; charset=UTF-8',
+            },
+          })
+          .then(response =>response.json())
+          .then(data=>console.log(data));
+          .then(err => console.log(err));
+        
+    }
+}
+const request=new Request();
+//request.get("https://jsonplaceholder.typicode.com/albums");
+//request.post("https://jsonplaceholder.typicode.com/albums",{userId:1,title:"Başlık"});
+
+
